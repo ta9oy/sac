@@ -1,7 +1,7 @@
 package com.app.sac.access_logs.entiry;
 
 
-import com.app.sac.users.entiry.users;
+import com.app.sac.users.entiry.Users;
 import com.app.sac.visits.entiry.visits;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -20,14 +20,14 @@ public class access_logs {
 
     @ManyToOne
     @JoinColumn(name = "visit_id", nullable = false)
-    private visits visit;
+    private visits visits;
 
     @Enumerated(EnumType.STRING)
     private ActionType action;
 
     @ManyToOne
     @JoinColumn(name = "action_by", nullable = false)
-    private users actionBy;
+    private Users actionBy;
 
     private LocalDateTime actionAt = LocalDateTime.now();
 

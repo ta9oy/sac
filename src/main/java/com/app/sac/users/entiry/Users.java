@@ -7,7 +7,7 @@ import java.util.UUID;
 
 @Entity
 @Data
-public class users {
+public class Users {
 
     @Id
     @GeneratedValue
@@ -27,4 +27,6 @@ public class users {
     public enum Role {
         ADMIN, RESIDENT, GUARD
     }
+
+    private String phoneNumber;
 }

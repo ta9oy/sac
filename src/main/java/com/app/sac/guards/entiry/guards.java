@@ -1,7 +1,7 @@
 package com.app.sac.guards.entiry;
 
 
-import com.app.sac.users.entiry.users;
+import com.app.sac.users.entiry.Users;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -17,7 +17,7 @@ public class guards {
 
     @OneToOne
     @JoinColumn(name = "user_id", nullable = false)
-    private users user;
+    private Users user;
 
     private String fullName;
     private String shift;
