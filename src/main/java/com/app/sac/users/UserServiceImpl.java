@@ -1,8 +1,8 @@
-package com.app.sac.users.services;
+package com.app.sac.users;
 
-import com.app.sac.users.entiry.Users;
-import com.app.sac.users.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,6 +17,12 @@ public class UserServiceImpl implements UserService {
     @Transactional
     public Users addUser(Users user) {
         return userRepository.save(user);
+    }
+
+
+    @Override
+    public Page<Users> getAllUsers(Pageable pageable) {
+        return userRepository.findAllUsers(pageable);
     }
 
 }

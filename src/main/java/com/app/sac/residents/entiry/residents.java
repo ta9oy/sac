@@ -1,6 +1,6 @@
 package com.app.sac.residents.entiry;
 
-import com.app.sac.users.entiry.Users;
+import com.app.sac.users.Users;
 import jakarta.persistence.*;
 import lombok.Data;
 

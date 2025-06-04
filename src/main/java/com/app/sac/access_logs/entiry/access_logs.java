@@ -1,7 +1,7 @@
 package com.app.sac.access_logs.entiry;
 
 
-import com.app.sac.users.entiry.Users;
+import com.app.sac.users.Users;
 import com.app.sac.visits.entiry.visits;
 import jakarta.persistence.*;
 import lombok.Data;

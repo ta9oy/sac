@@ -1,7 +1,7 @@
 package com.app.sac.guards.entiry;
 
 
-import com.app.sac.users.entiry.Users;
+import com.app.sac.users.Users;
 import jakarta.persistence.*;
 import lombok.Data;
 

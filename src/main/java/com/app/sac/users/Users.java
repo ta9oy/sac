@@ -1,4 +1,4 @@
-package com.app.sac.users.entiry;
+package com.app.sac.users;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -14,7 +14,7 @@ public class Users {
     private UUID id;
 
     @Column(unique = true, nullable = false)
-    private String username;
+    private String userName;
 
     @Column(nullable = false)
     private String passwordHash;
